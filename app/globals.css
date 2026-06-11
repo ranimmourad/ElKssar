@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #2d1f15;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin elegant divider */
+.hairline {
+  border-color: rgba(122, 85, 54, 0.18);
+}
+
+/* Subtle letter-spacing for eyebrow labels */
+.eyebrow {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+::selection {
+  background: #9a2e15;
+  color: #fff;
+}
+
+/* Custom thin scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cdb39a;
+  border-radius: 0;
+}
+::-webkit-scrollbar-track {
+  background: #f6f1ec;
+}
